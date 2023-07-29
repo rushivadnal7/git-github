@@ -1,0 +1,72 @@
+body{
+    /* background-color: aliceblue; */
+    position: relative;
+    background-image: url('/trianglebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+div {
+ position: absolute;
+ left: 27em;
+ /* background-color: lightcyan; */
+ height: fit-content;
+ color: azure;
+ text-decoration: underline wavy lightcyan;
+}
+#labela{
+    margin: 2px;
+    padding: 5px;
+    color: aliceblue;
+    border: 2px solid  aliceblue;
+    position: absolute;
+    left: 11%;
+    top: 9em;
+    
+}
+#labelb{
+    margin: 2px;
+    padding: 5px;
+    color: aliceblue;
+    position: absolute;
+    border: 2px solid  aliceblue;
+    right: 11%;
+    top: 9em;
+    
+}
+#labelc{
+ 
+    position: absolute;
+    left: 37em;
+    top: 28em;
+    background-color: whitesmoke;
+    border: 2px dashed black;
+    width: fit-content;
+    
+    height: 1em;
+    
+}
+
+#mytextboxa{
+    
+    position: absolute;
+    left: 9em;
+    top: 15em;
+}
+#mytextboxb{
+    position: absolute;
+    right: 9em;
+    top: 15em;
+    
+}
+#mybutton{
+    position: fixed; 
+    left: 38rem;
+    top: 45%;
+    height: 4em;
+    width: 5em ;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 2em;
+}

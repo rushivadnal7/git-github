@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>JOKE CREATOR AI</title>
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html,
+    body {
+        background-color: #202123;
+        height: 95%;
+        width: 100%;
+        color: #e0f2f1;
+    }
+
+    nav {
+        background-color: #343541;
+        color: #e0f2f1;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 17px;
+    }
+
+    .input {
+        padding: 10px;
+        margin: 40px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input label {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .output{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-txt {
+        width: fit-content;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #jokeCreated{
+        margin: 30px auto;
+        color: aquamarine;
+    }
+
+    #btn{
+        margin-top: 50px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: larger;
+        color: #ef4146;
+    }
+    #user-input{
+        padding: 7px;
+        border-radius: 7px;
+        /* font-size: large; */
+        font-weight: bold;
+        border: none;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="heading">
+
+            <h1>JOKE CREATOR AI  &#129302;</h1>
+            <br>
+            <marquee behavior="" direction="right">
+                <p class="heading-txt">
+                    Create a Joke With a Single Word  &#128516;
+                </p>
+            </marquee>
+        </div>
+    </nav>
+    <div class="item2">
+        <div class="input">
+            <label for="word">Enter Your Word :</label>
+            <input type="text" name="word" id="user-input">
+        </div>
+        <div class="output">
+            <p id="jokeCreated"></p>
+            <button id="btn" type="button" onclick="generateJoke()">Generate</button>
+        </div>
+    </div>
+</body>
+<script src="tellMEaJoke.js"></script>
+
+</html>
