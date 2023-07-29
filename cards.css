@@ -1,0 +1,38 @@
+body {
+    background-color: green;
+}
+.head{
+    text-align: center;
+    font-style: italic;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card {
+    display: inline;
+    margin: 5px;
+    height: 60px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    border: solid black 1px;
+    border-radius: 2%;
+    height: 150px;
+    width: 121px;
+    
+    
+}
+
+
+#sufbtn {
+    position: fixed;
+    left: 46%;
+    top: 80%;
+    height: 4em;
+    border-radius: 5px;
+    background-color: red;
+}

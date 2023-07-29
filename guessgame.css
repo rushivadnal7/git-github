@@ -1,0 +1,29 @@
+body{
+    background-color: cornflowerblue;
+    
+}
+
+h1{
+    text-align: center;
+}
+p{
+   text-align: center;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin-left: 5px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-top: 3em;
+    height: 3em;
+    width: 6em;
+    font-size: large;
+}

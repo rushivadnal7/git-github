@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+    }
+
+    body {
+        background-color: #F0F8FF;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .logoSpace {
+        width: 140px;
+        margin: 20px auto;
+        height: 60px;
+        background-color: #404040;
+    }
+
+    .linkbar {
+        display: flex;
+        margin: 25px 40px;
+        justify-content: space-evenly;
+    }
+
+    .links {
+        text-decoration: none;
+        color: #505050;
+        margin: 10px;
+    }
+
+    .dropdowns {
+        border: none;
+        background-color: transparent;
+        color: #505050;
+    }
+
+    .content {
+        margin: 50px 150px;
+        width: 40rem;
+    }
+
+    .content h1 {
+        font-weight: bolder;
+        margin: 20px;
+    }
+
+    .content p,
+    button {
+        margin: 20px;
+    }
+
+    .content button {
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: deepskyblue;
+        color: white;
+        box-shadow: 5px 10px 16px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .content2-heading {
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .content2 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        margin: auto;
+        width: 270px;
+        /* border: solid 2px black; */
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 16px 3px rgba(0, 0, 0, 0.1);;
+        margin: 20px;
+    }
+    .box h3{
+        margin: 10px 0px 15px;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logoSpace"></div>
+        </div>
+        <div class="linkbar">
+            <a href="#" id="link1" class="links">nav1</a>
+            <a href="#" id="link2" class="links">nav2</a>
+            <a href="#" id="link3" class="links">nav3
+                <select name="nav3" class="dropdowns">
+                    <option value="one"></option>
+                    <option value="two"></option>
+                    <option value="three"></option>
+                </select>
+            </a>
+            <a href="#" id="link4" class="links">nav4
+                <select name="nav4" class="dropdowns">
+                    <option value="one"></option>
+                    <option value="two"></option>
+                    <option value="three"></option>
+                </select>
+            </a>
+            <a href="#" id="link5" class="links">nav5</a>
+            <a href="#" id="link6" class="links">nav6</a>
+            <a href="#" id="link7" class="links">nav7</a>
+            <a href="#" id="link8" class="links">nav8</a>
+        </div>
+        <hr>
+    </nav>
+
+    <div class="content">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deserunt commodi omnis, exercitationem
+            velit dolorem quod fugiat aliquam vel enim animi reiciendis ipsam sunt similique nesciunt neque aspernatur
+            est provident. Cum minus distinctio iusto repellat praesentium fugit ut magni dolorum.
+        </p>
+        <button>Check Pricing</button>
+    </div>
+
+    <h2 class="content2-heading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error molestiae .</h2>
+    <div class="content2">
+
+        <div class="box" id="box1">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur. 
+            </h3>
+            adipisicing elit. Vel aperiam quos nobis,
+            quidem possimus incidunt autem adipisci, iure amet quia sequi dolores alias pariatur nostrum. Libero
+            laboriosam facere totam quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            assumenda 
+        </div>
+
+        <div class="box" id="box2">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur. 
+            </h3>
+            adipisicing elit. Magnam, commodi deleniti.
+            Quasi reiciendis dignissimos iure eligendi? Natus nam deleniti voluptates, doloribus inventore rerum. Odit
+            nam architecto in libero consequatur voluptatem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos 
+        </div>
+
+        <div class="box" id="box3">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur. 
+            </h3>
+            adipisicing elit. In ad minima voluptatibus
+            facere optio atque pariatur quae illo esse fugiat quas, debitis officia id mollitia aliquam amet nulla velit
+            quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos assumenda veritatis 
+        </div>
+    </div>
+</body>
+
+</html>

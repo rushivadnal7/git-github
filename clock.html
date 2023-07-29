@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <script type="module" src="clock.js"></script>
+</head>
+
+<style>
+    body {
+        color: white;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        /* height: 90vh; */
+        background-color: #505050;
+    }
+
+    .clock {
+        border: 2px dashed whitesmoke;
+        margin: auto;
+        margin-top: 100px;
+        width: 350px;
+        height: 350px;
+        background-color: #303030;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+    }
+
+    .value {
+        font-size: large;
+        position: relative;
+        height: fit-content;
+    }
+
+    #twelve {
+        top: 2%;
+        left: 47%;
+    }
+
+    #one {
+        top: 10%;
+        left: 68%;
+    }
+
+    #two {
+        top: 25.5%;
+        left: 81.5%;
+    }
+
+    #three {
+        top: 48.5%;
+        left: 84.5%;
+    }
+
+    #four {
+        top: 70.5%;
+        left: 75.5%;
+    }
+
+    #five {
+        top: 85.5%;
+        left: 58.5%;
+    }
+
+    #six {
+        top: 93%;
+        left: 32%;
+    }
+
+    #seven {
+        top: 86%;
+        left: 4%;
+    }
+
+    #eight {
+        top: 71%;
+        right: 13%;
+    }
+
+    #nine {
+        top: 49%;
+        right: 23%;
+    }
+
+    #ten {
+        top: 26%;
+        right: 21%;
+    }
+
+    #eleven {
+        top: 11%;
+        right: 13%;
+    }
+
+    #center {
+        top: 50%;
+        left: 12%;
+        width: 7px;
+        height: 7px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .hand {
+        position: absolute;
+        width: 4px;
+        background-color: whitesmoke;
+        transform-origin: bottom;
+        border-radius: 10px;
+        background-color: whitesmoke;
+    }
+
+    #hr {
+        opacity: 1.7;
+        left: 51%;
+        top: 22%;
+        height: 100px;
+    }
+    
+    #min {
+        opacity: 0.7;
+        left: 51%;
+        top: 17%;
+        height: 120px;
+    }
+    
+    #sec {
+        opacity: 0.3;
+        left: 51%;
+        top: 14%;
+        height: 130px;
+    }
+</style>
+
+<body>
+    <div type="button" class="clock">
+        <span id="twelve" class="value">12</span>
+        <span id="one" class="value">1</span>
+        <span id="two" class="value">2</span>
+        <span id="three" class="value">3</span>
+        <span id="four" class="value">4</span>
+        <span id="five" class="value">5</span>
+        <span id="six" class="value">6</span>
+        <span id="seven" class="value">7</span>
+        <span id="eight" class="value">8</span>
+        <span id="nine" class="value">9</span>
+        <span id="ten" class="value">10</span>
+        <span id="eleven" class="value">11</span>
+
+        <span id="center" class="value"></span>
+        <div id="hr" class="hand value"></div>
+        <div id="min" class="hand value"></div>
+        <div id="sec" class="hand value"></div>
+
+    </div>
+</body>
+
+</html>

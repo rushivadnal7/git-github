@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music KeyBoard</title>
+  <script src="musickeyboard.js"></script>
+</head>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .board {
+    width: 100%;
+    background-color: gray;
+    padding: 20px;
+    margin: 5px;
+  }
+  kbd{
+    display: block;
+  }
+  .line1 , .line2 , .line3 {
+    display: flex;
+  }
+  .keys {
+    flex-grow: 2;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+  }
+</style>
+
+<body>
+  <div class="board">
+    <div class="line1">
+
+      <div class="keys" data-key="81">
+        <kbd>q</kbd>
+        <span>Sol</span>
+      </div>
+      <div class="keys" data-key="87">
+        <kbd>w</kbd>
+        <span>Re</span>
+      </div>
+      <div class="keys" data-key="69">
+        <kbd>e</kbd>
+        <span>Si</span>
+      </div>
+      <div class="keys" data-key="82">
+        <kbd>r</kbd>
+        <span>g</span>
+      </div>
+      <div class="keys" data-key="84">
+        <kbd>t</kbd>
+        <span>Mi</span>
+      </div>
+      <div class="keys" data-key="89">
+        <kbd>y</kbd>
+        <span>La</span>
+      </div>
+      <div class="keys" data-key="85">
+        <kbd>u</kbd>
+        <span>G6</span>
+      </div>
+      <div class="keys" data-key="73">
+        <kbd>i</kbd>
+        <span>Fa</span>
+      </div>
+      <div class="keys" data-key="79">
+        <kbd>o</kbd>
+        <span>F6</span>
+      </div>
+      <div class="keys" data-key="80">
+        <kbd>p</kbd>
+        <span>E6</span>
+      </div>
+    </div>
+
+    <div class="line2">
+      <div class="keys" data-key="65">
+        <kbd>a</kbd>
+        <span>Do</span>
+      </div>
+      <div class="keys" data-key="83">
+        <kbd>s</kbd>
+        <span>D6</span>
+      </div>
+      <div class="keys" data-key="68">
+        <kbd>d</kbd>
+        <span>d6</span>
+      </div>
+      <div class="keys" data-key="70">
+        <kbd>f</kbd>
+        <span>C6</span>
+      </div>
+      <div class="keys" data-key="71">
+        <kbd>g</kbd>
+        <span>c6</span>
+      </div>
+      <div class="keys" data-key="72">
+        <kbd>h</kbd>
+        <span>c3</span>
+      </div>
+      <div class="keys" data-key="74">
+        <kbd>j</kbd>
+        <span>BB3</span>
+      </div>
+      <div class="keys" data-key="75">
+        <kbd>k</kbd>
+        <span>B6</span>
+      </div>
+      <div class="keys" data-key="76">
+        <kbd>l</kbd>
+        <span>A6</span>
+      </div>
+    </div>
+
+    <div class="line3">
+
+      <div class="keys" data-key="90">
+        <kbd>z</kbd>
+        <span>A3</span>
+      </div>
+      <div class="keys" data-key="88">
+        <kbd>x</kbd>
+        <span>b6</span>
+      </div>
+      <div class="keys" data-key="67">
+        <kbd>c</kbd>
+        <span>a6</span>
+      </div>
+      <div class="keys" data-key="86">
+        <kbd>v</kbd>
+        <span>do</span>
+      </div>
+      <div class="keys" data-key="66">
+        <kbd>b</kbd>
+        <span>F</span>
+      </div>
+      <div class="keys" data-key="78">
+        <kbd>n</kbd>
+        <span>C</span>
+      </div>
+      <div class="keys" data-key="77">
+        <kbd>m</kbd>
+        <span>Eb</span>
+      </div>
+    </div>
+
+
+    <audio src="/audio/a3-101081.mp3" data-key="90"></audio>
+    <audio src="/audio/a6-102820.mp3" data-key="67"></audio>
+    <audio src="/audio/a6-82015.mp3" data-key="76"></audio>
+    <audio src="/audio/b6-82017 (1).mp3" data-key="88"></audio>
+    <audio src="/audio/b6-82017.mp3" data-key="75"></audio>
+    <audio src="/audio/bb3_piano_note-98736.mp3" data-key="74"></audio>
+    <audio src="/audio/c3-95007.mp3" data-key="72"></audio>
+    <audio src="/audio/c6-102822.mp3" data-key="70"></audio>
+    <audio src="/audio/c6-82019.mp3" data-key="71"></audio>
+    <audio src="/audio/d6-82018.mp3" data-key="83"></audio>
+    <audio src="/audio/d6-82020.mp3" data-key="68"></audio>
+    <audio src="/audio/do-35686.mp3" data-key="65"></audio>
+    <audio src="/audio/e6-82016.mp3" data-key="80"></audio>
+    <audio src="/audio/f6-102819.mp3" data-key="79"></audio>
+    <audio src="/audio/fa-78409.mp3" data-key="73"></audio>
+    <audio src="/audio/g6-82014 (1).mp3" data-key="85"></audio>
+    <audio src="/audio/la-80237.mp3" data-key="89"></audio>
+    <audio src="/audio/mi-80239.mp3" data-key="84"></audio>
+    <audio src="/audio/piano-c_C_major.wav" data-key="78"></audio>
+    <audio src="/audio/piano-eb_Dmajor.wav" data-key="77"></audio>
+    <audio src="/audio/piano-f_Fmajor.wav" data-key="66"></audio>
+    <audio src="/audio/re-78500.mp3" data-key="87"></audio>
+    <audio src="/audio/si-80238.mp3" data-key="69"></audio>
+    <audio src="/audio/sol-101774.mp3" data-key="81"></audio>
+    <audio src="/audio/" data-key=""></audio>
+    <audio src="/audio" data-key=""></audio>
+  </div>
+</body>
+
+</html>

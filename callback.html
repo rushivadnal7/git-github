@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function imageLoader(src, callback) {
+        let image = document.createElement("img");
+        image.src = src;
+        image.onload = function(){
+            console.log(src)
+            callback(null , src)
+        }
+        image.onerror = function(){
+            console.log(`Error Loading the Image src ${src}`)
+            callback(new Error("Src Got some ERROR"))
+        }
+        document.body.appendChild(image);
+    }
+
+    function imageLoaded(error ,src){
+        // if(error){
+        //     console.log(`ERROR: ${error}`)
+        //     return
+        // }
+        alert(` (${src} ) + Image Loaded Successfully `);
+    }
+
+    imageLoader("./imgs/card.jpe" , imageLoaded )
+</script>
+
+</html>
