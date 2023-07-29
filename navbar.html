@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html , body{
+        height: 100%;
+        width: 100%;
+    }
+    nav{
+        background-color: #303030;
+        display: flex;
+        color: azure;
+    }
+    li{
+        list-style: none;
+        padding: 5px 30px;
+    }
+</style>
+<body>
+     <nav class="navs">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+     </nav>
+</body>
+<script>
+   let li = document.getElementsByClassName("navs")
+   li[0].firstElementChild.style.color = "blue"
+</script>
+</html>

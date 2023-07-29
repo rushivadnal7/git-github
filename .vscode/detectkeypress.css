@@ -1,0 +1,8 @@
+#box{
+    background-color: #222222;
+    color: aliceblue;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}

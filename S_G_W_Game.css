@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: #303030;
+    color: white;
+}
+
+.boxes {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgboxes {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.imgboxes img {
+    width: 150px;
+    height: 150px;
+}
+
+#btn {
+    font-size: large;
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    left: 47%;
+    font-weight: bold;
+}
